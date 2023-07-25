@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.main-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.typed-out{
+    overflow: hidden;
+    border-right: .1em solid ghostwhite;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: 
+        1.5s
+        typing 1.5s steps(25, end) forwards,
+        blink 1s infinite;
+}
+
+.container{
+    display: inline-block;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% } 
+}
+
+@keyframes blink {
+    from {border-color: transparent}
+    to {border-color: ghostwhite}
+}
