@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(40, 1, 58);
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.main-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.typed-out{
+    overflow: hidden;
+    border-right: .2em solid ghostwhite;
+    white-space: nowrap;
+    font-size: 3rem;
+    width: 0;
+    animation: 
+        typing 2.5s steps(20, end) forwards,
+        blink 1s infinite;
+}
+
+.underlined{
+    border-bottom: .1em solid rgb(255, 255, 141);
+    animation-delay: 3s;
+    animation: flow 3s forwards;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% } 
+}
+
+@keyframes blink {
+    from {border-color: transparent}
+    to {border-color: ghostwhite}
+}
+
+@keyframes flow {
+    from {width: 0}
+    to{ width: 98%}
+}
