@@ -1,7 +1,9 @@
 body{
-    background-color: black;
+    background: linear-gradient(45deg,#000,#543459);
+    background-size: 150% 150%;
+    animation: color 2s ease-in-out infinite;
     color: white;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
 }
 .main-text{
     position: absolute;
@@ -13,23 +15,21 @@ body{
     overflow: hidden;
     border-right: .1em solid ghostwhite;
     white-space: nowrap;
-    font-size: 1.6rem;
+    font-size: 70px;
+    font-weight: 500;
     width: 0;
     animation: 
         1.5s
         typing 1.5s steps(25, end) forwards,
         blink 1s infinite;
 }
-
 .container{
     display: inline-block;
 }
-
 @keyframes typing {
     from { width: 0 }
     to { width: 100% } 
 }
-
 @keyframes blink {
     from {border-color: transparent}
     to {border-color: ghostwhite}
